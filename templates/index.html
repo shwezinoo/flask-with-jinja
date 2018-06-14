@@ -1,0 +1,15 @@
+<!DOCTYPE>
+<html>
+	<head><title>Flask with jinja</title></head>
+	<body>
+		<ul>
+			<li><img src="{{url_for('static',filename='geo.jpg')}}"/></li>
+			{#This is comment block .we will set some variable in the jinja template.#}
+			{% set name="Shwe Zin Oo" %}
+			{% set user_name="shwezinoo" %}
+			<li>{{name}}</li>
+			<li><a href="http://github.com/{{username}}">Github</a></li>
+			<li><a href="http://shwezinoolay123.herokuapp.com">Heroku</a></li>
+		</ul>
+	</body>
+</html>
